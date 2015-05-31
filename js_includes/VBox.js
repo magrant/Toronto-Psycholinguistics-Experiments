@@ -85,7 +85,7 @@ jqueryWidget: {
                     var td = $(document.createElement("td"));
                     ddd.append(tr.append(td.append(dd ? dd : d)));
                 }
-
+                
                 // Add the actual child.
                 var ac = ddd ? ddd : (dd ? dd : d);
 

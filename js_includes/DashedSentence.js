@@ -115,7 +115,7 @@ jqueryWidget: {
 
                     if (j <= this.stoppingPoint)
                         this.stoppingPoint--;
-
+                    
                     continue;
                 }
 

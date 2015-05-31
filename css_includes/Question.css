@@ -41,7 +41,7 @@ li.scale-box {
     font-style: italic;
 }
 li.scale-box a {
-    text-decoration: none;
+    text-decoration: none; 
     display: block;
     vertical-align: middle;
 }
@@ -57,3 +57,4 @@ span.fake-link {
 span:hover.fake-link {
     cursor: pointer;
 }
+
