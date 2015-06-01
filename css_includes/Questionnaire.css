@@ -1,0 +1,33 @@
+body {
+	background-image: url(greyBack.jpg);
+	text-align: left;
+    font-size: 88%;
+    font-family: Century Gothic;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+.body{
+	width: 100%;
+}
+
+form{
+	margin: 0 auto;
+    width: 90%;
+    clear: both;
+    padding: 2%;
+	border: 1px;
+	border-style: solid;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: white;
+}
+
+
+
+input[type=submit] {
+    width: 135px;
+ 	height: 70px;
+    cursor:pointer;
+}
