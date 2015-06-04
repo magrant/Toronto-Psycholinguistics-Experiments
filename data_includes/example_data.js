@@ -1,4 +1,4 @@
-var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("story", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -20,7 +20,7 @@ var defaults = [
         hasCorrect: true
     },
     "Message", {
-        hideProgressBar: true
+        hideProgressBar: false
     },
     "Form", {
         hideProgressBar: true,
@@ -63,16 +63,26 @@ var items = [
     } ],
 
     //
-    // Three practice items for self-paced reading (one with a comprehension question).
-    //
-    ["practice", "DashedSentence", {s: "This is a practice sentence to get you used to reading sentences like this."}],
-    ["practice", "DashedSentence", {s: "This is another practice sentence with a practice question following it."},
+    //STORY + QUESTIONS
+
+
+    //all story with MC answers
+    ["story", "Message", {html: "<center>This is a story you can see all at once!<br><i>Press any key to continue.</i></center>", transfer: "keypress"},
                  "Question", {hasCorrect: false, randomOrder: false,
                               q: "How would you like to answer this question?",
                               as: ["Press 1 or click here for this answer.",
                                    "Press 2 or click here for this answer.",
                                    "Press 3 or click here for this answer."]}],
-    ["practice", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."}],
+
+    //pause between items with a timer
+    ["sep", "Separator", {transfer: 1000, normalMessage: "Please wait for the next sentence."}],
+
+    //pause between items with a key press
+    ["sep", "Separator", {transfer: "keypress", normalMessage: "Please press any key to continue."}],
+
+    //word by word story with fill in question
+    ["story", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."},
+     "Form", {html: 'Write anything you want here: <input type="text" name="anything">'}],
 
     //
     // Two "real" (i.e. non-filler) self-paced reading items with corresponding acceptability judgment items.
