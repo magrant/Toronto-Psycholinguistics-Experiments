@@ -84,6 +84,17 @@ var items = [
     ["story", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."},
      "Form", {html: 'Write anything you want here: <input type="text" name="anything">'}],
 
+
+
+     // IMAGE + QUESTION
+     ["story", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "keypress"},
+              "Question", {q: "Whats under 'Language'?",
+                            as: ["Knowledge", "Skill", "Math", "Research"]}],
+
+     ["story", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>WAIT</p>', transfer: 6000}],
+     ["story", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /> <br><p>CLICK</p>', transfer: "click"}],
+
+
     //
     // Two "real" (i.e. non-filler) self-paced reading items with corresponding acceptability judgment items.
     // There are two conditions.
