@@ -91,10 +91,9 @@ var items = [
       "Form",
       //obligatory option that includes a HTML file that is a questionnaire
       {html: { include: "example_intro.html" },
-
-
-      //-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!
+      //fields that need to have the right format when taking input from user
       validators: {
+        //age has to be a number
         age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
     } ],
