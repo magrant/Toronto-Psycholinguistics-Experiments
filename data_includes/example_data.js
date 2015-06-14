@@ -2,7 +2,7 @@
 
 var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("story", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
 var practiceItemTypes = ["practice"];
-var showProgressBar = true;
+
 
 var defaults = [
     "Separator", {
@@ -19,13 +19,13 @@ var defaults = [
 
     "DashedSentence", {
         //"s" option is obligatory
-        mode: "self-paced reading"
+        mode: "self-paced reading",
           //other option: "speeded acceptability"
     },
 
-    "FlashSentence"{
+    "FlashSentence", {
       //"s" option is obligatory
-      transfer: "keypress"
+      transfer: "keypress",
     },
 
     "Question", {
@@ -33,7 +33,7 @@ var defaults = [
         hasCorrect: true
     },
 
-    "AcceptabilityJudgment" {
+    "AcceptabilityJudgment", {
         //"s" option is obligatory
         //"q" option is obligatory
         //"as" option is obligatory
@@ -45,15 +45,15 @@ var defaults = [
         leftComment: "(Bad)", //displayed on the left side of the scale
         rightComment: "(Good)" //displayed on the right side of the scale
     },
-
-    "DashedAcceptabilityJudgment"{
+/*
+    "DashedAcceptabilityJudgment", {
         //combination of AcceptabilityJudgment and DashedSentence
         //"s" option is obligatory
         //"q" option is obligatory
         //"as" option is obligatory
     },
-
-    "Form" {
+*/
+    "Form", {
         //"html" option is obligatory
         hideProgressBar: true,
         continueOnReturn: true,
@@ -96,7 +96,7 @@ var items = [
       validators: {
         age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
-    }],
+    } ],
 
 
     /*
