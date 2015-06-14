@@ -81,7 +81,7 @@ var items = [
     /*
     ===================
     INTRODUCTION
-    Can include files for Questionnaires, concent forms etc...
+    Can include files for Questionnaires, consent forms etc...
     ===================
     */
 
