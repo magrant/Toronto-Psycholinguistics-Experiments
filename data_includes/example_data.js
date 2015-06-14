@@ -33,7 +33,7 @@ var defaults = [
         hasCorrect: true
     },
 
-    "AcceptabilityJudgment", {
+    "AcceptabilityJudgment" {
         //"s" option is obligatory
         //"q" option is obligatory
         //"as" option is obligatory
@@ -53,7 +53,7 @@ var defaults = [
         //"as" option is obligatory
     },
 
-    "Form", {
+    "Form" {
         //"html" option is obligatory
         hideProgressBar: true,
         continueOnReturn: true,
