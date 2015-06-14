@@ -19,13 +19,13 @@ var defaults = [
 
     "DashedSentence", {
         //"s" option is obligatory
-        mode: "self-paced reading",
+        mode: "self-paced reading"
           //other option: "speeded acceptability"
     },
 
     "FlashSentence", {
       //"s" option is obligatory
-      transfer: "keypress",
+      transfer: "keypress"
     },
 
     "Question", {
@@ -45,14 +45,15 @@ var defaults = [
         leftComment: "(Bad)", //displayed on the left side of the scale
         rightComment: "(Good)" //displayed on the right side of the scale
     },
-/*
+
     "DashedAcceptabilityJudgment", {
         //combination of AcceptabilityJudgment and DashedSentence
         //"s" option is obligatory
         //"q" option is obligatory
         //"as" option is obligatory
+        hasCorrect: false
     },
-*/
+
     "Form", {
         //"html" option is obligatory
         hideProgressBar: true,
