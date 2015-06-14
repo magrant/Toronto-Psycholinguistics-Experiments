@@ -1,28 +1,60 @@
+
+
 var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("story", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
 var practiceItemTypes = ["practice"];
+var showProgressBar = true;
 
 var defaults = [
     "Separator", {
-        transfer: 1000,
-        normalMessage: "Please wait for the next sentence.",
-        errorMessage: "Wrong. Please wait for the next sentence."
+        transfer: 1000, //wait for 1000ms
+          //other options: "keypress", "click"
+        normalMessage: "Please wait for the next sentence.", //message to be displayed
+        errorMessage: "Wrong. Please wait for the next sentence." //message to be displayed in red
     },
-    "DashedSentence", {
-        mode: "self-paced reading",
-    },
-    "AcceptabilityJudgment", {
-        as: ["1", "2", "3", "4", "5", "6", "7"],
-        presentAsScale: true,
-        instructions: "Use number keys or click boxes to answer.",
-        leftComment: "(Bad)", rightComment: "(Good)"
-    },
-    "Question", {
-        hasCorrect: true
-    },
+
     "Message", {
+        //"html" option is obligatory
         hideProgressBar: false
     },
+
+    "DashedSentence", {
+        //"s" option is obligatory
+        mode: "self-paced reading"
+          //other option: "speeded acceptability"
+    },
+
+    "FlashSentence"{
+      //"s" option is obligatory
+      transfer: "keypress"
+    },
+
+    "Question", {
+        //"as" option is obligatory
+        hasCorrect: true
+    },
+
+    "AcceptabilityJudgment", {
+        //"s" option is obligatory
+        //"q" option is obligatory
+        //"as" option is obligatory
+        as: ["1", "2", "3", "4", "5", "6", "7"],
+        //writing the "as" option here means that this is the default for
+        //all AcceptabilityJudgment items
+        presentAsScale: true, //presents the "as" option as a scale
+        instructions: "Use number keys or click boxes to answer.", //instruction text
+        leftComment: "(Bad)", //displayed on the left side of the scale
+        rightComment: "(Good)" //displayed on the right side of the scale
+    },
+
+    "DashedAcceptabilityJudgment"{
+        //combination of AcceptabilityJudgment and DashedSentence
+        //"s" option is obligatory
+        //"q" option is obligatory
+        //"as" option is obligatory
+    },
+
     "Form", {
+        //"html" option is obligatory
         hideProgressBar: true,
         continueOnReturn: true,
         saveReactionTime: true
@@ -31,54 +63,57 @@ var defaults = [
 
 var items = [
 
-    // New in Ibex 0.3-beta-9. You can now add a '__SendResults__' controller in your shuffle
-    // sequence to send results before the experiment has finished. This is NOT intended to allow
-    // for incremental sending of results -- you should send results exactly once per experiment.
-    // However, it does permit additional messages to be displayed to participants once the
-    // experiment itself is over. If you are manually inserting a '__SendResults__' controller into
-    // the shuffle sequence, you must set the 'manualSendResults' configuration variable to 'true', since
-    // otherwise, results are automatically sent at the end of the experiment.
-    //
-    //["sr", "__SendResults__", { }],
+    /*
+    ===================
+    SEPARATOR
+    The pause needed between each item of the experiment
+    ===================
+    */
 
-    ["sep", "Separator", { }],
+    //ends after timer (1000ms)
+    ["sep", "Separator", {transfer: 1000, normalMessage: "Please wait for the next sentence."}],
 
-    // New in Ibex 0.3-beta19. You can now determine the point in the experiment at which the counter
-    // for latin square designs will be updated. (Previously, this was always updated upon completion
-    // of the experiment.) To do this, insert the special '__SetCounter__' controller at the desired
-    // point in your running order. If given no options, the counter is incremented by one. If given
-    // an 'inc' option, the counter is incremented by the specified amount. If given a 'set' option,
-    // the counter is set to the given number. (E.g., { set: 100 }, { inc: -1 })
-    //
-    //["setcounter", "__SetCounter__", { }],
+    //ends when key is press
+    ["sep", "Separator", {transfer: "keypress", normalMessage: "Please press any key to continue."}],
 
-    // NOTE: You could also use the 'Message' controller for the experiment intro (this provides a simple
-    // consent checkbox).
 
-    ["intro", "Form", {
-        html: { include: "example_intro.html" },
-        validators: {
-            age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
+    /*
+    ===================
+    INTRODUCTION
+    Can include files for Questionnaires, concent forms etc...
+    ===================
+    */
+
+    //name of controller
+    ["intro",
+      //type
+      "Form",
+      //obligatory option that includes a HTML file that is a questionnaire
+      {html: { include: "example_intro.html" },
+
+
+      //-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!-!
+      validators: {
+        age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
-    } ],
+    }],
 
-    //
-    //STORY + QUESTIONS
+
+    /*
+    ===================
+    TEXT
+    Controllers that work with Text and Questions
+    ===================
+    */
 
 
     //all story with MC answers
-    ["story", "Message", {html: "<center>This is a story you can see all at once!<br><i>Press any key to continue.</i></center>", transfer: "keypress"},
+    ["story", "FlashSentence", {s: "This is a story you can see all at once!\n Press any key to continue."},
                  "Question", {hasCorrect: false, randomOrder: false,
                               q: "How would you like to answer this question?",
                               as: ["Press 1 or click here for this answer.",
                                    "Press 2 or click here for this answer.",
                                    "Press 3 or click here for this answer."]}],
-
-    //pause between items with a timer
-    ["sep", "Separator", {transfer: 1000, normalMessage: "Please wait for the next sentence."}],
-
-    //pause between items with a key press
-    ["sep", "Separator", {transfer: "keypress", normalMessage: "Please press any key to continue."}],
 
     //word by word story with fill in question
     ["story", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."},
@@ -148,24 +183,6 @@ var items = [
 
     ["f", "DashedSentence", {s: "The woman that John had seen in the subway bought herself a pair of stunning shoes that cost a fortune."},
           "Question",       {q: "Where did John see the woman?", as: ["In the subway", "On the bus", "In the shoe shop"]}],
-
-    ["f", "DashedSentence", {s: "If the award-winning chef had entered this competition, he surely would have won first prize."},
-          "Question",       {q: "Why didn't the chef win the competition?",
-                             as: ["Because he didn't enter it",
-                                  "Because his food wasn't good enough.",
-                                  "Because he was kicked out for cheating."]}],
-
-    ["f", "DashedSentence", {s: "If the organized secretary had filed the documents when she first received them, they would have been easy to find."},
-          "Question",       {q: "Why were the documents difficult to find?",
-                             as: ["Because the secretary hadn't filed them properly",
-                                  "Because a manager at the company had lost them",
-                                  "Because they had been stolen."]}],
-
-    ["f", "DashedSentence", {s: "If the homemade beer had been left to ferment more, it would have been drinkable."},
-          "Question",       {q: "Why wasn't the homemade beer drinkable?",
-                             as: ["It hadn't been left to ferment long enough",
-                                  "It had been left to ferment too long",
-                                  "The ingredients had been measured incorrectly."]}],
 
     ["f", "DashedSentence", {s: "The cowboy that the bulls tried to trample injured himself getting off a horse."}],
 
