@@ -14,18 +14,14 @@ var defaults = [
 
     "Message", {
         //"html" option is obligatory
-        hideProgressBar: false
+        hideProgressBar: false,
+        transfer: "keypress"
     },
 
     "DashedSentence", {
         //"s" option is obligatory
         mode: "self-paced reading"
           //other option: "speeded acceptability"
-    },
-
-    "FlashSentence", {
-      //"s" option is obligatory
-      transfer: "keypress"
     },
 
     "Question", {
@@ -108,7 +104,7 @@ var items = [
 
 
     //all story with MC answers
-    ["story", "FlashSentence", {s: "This is a story you can see all at once!\n Press any key to continue."},
+    ["story", "Message", {html: "<center>This is a story you can see all at once!<br>Press any key to continue.</center>"},
                  "Question", {hasCorrect: false, randomOrder: false,
                               q: "How would you like to answer this question?",
                               as: ["Press 1 or click here for this answer.",
