@@ -103,17 +103,32 @@ var items = [
     */
 
 
-    //all story with MC answers
-    ["story", "Message", {html: "<center>This is a story you can see all at once!<br>Press any key to continue.</center>"},
+
+
+    //text displayed word by word
+    ["practice", "DashedSentence", {s: "This is a practice sentence before the experiment begins."}],
+
+    //all text with MC question
+    ["story", "Message", {html: "<center>This is a story you can see all at once!<br>
+                                  Tanya and John were racing. She won.<b>Press any key to continue.</b></center>"},
                  "Question", {hasCorrect: false, randomOrder: false,
+                              //if a question has a correct answer (hasCorrect: true), you would have to put
+                              //that answer as the first element in the "as" option.
                               q: "How would you like to answer this question?",
-                              as: ["Press 1 or click here for this answer.",
+                              as: ["Press 1 or click here for this answer.", //this would be the correct answer if hasCorrect:true
                                    "Press 2 or click here for this answer.",
                                    "Press 3 or click here for this answer."]}],
 
-    //word by word story with fill in question
-    ["story", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."},
-     "Form", {html: 'Write anything you want here: <input type="text" name="anything">'}],
+
+    //word by word text with fill in the blank question
+    ["story", "DashedSentence", {s: "Remember the story?"},
+     "Form", {html: 'Which player won the race: <input type="text" name="anything">'}],
+
+
+     //all text with scaling question
+     ["story", "Message", {html: "John and Tanya went for lunch after the race."},
+                "AcceptabilityJudgment", {s:"From a scale of 1 to 9, how has your morning been?",
+                                           as:["1","2","3","4","5","6","7","8","9"]}],
 
 
 
