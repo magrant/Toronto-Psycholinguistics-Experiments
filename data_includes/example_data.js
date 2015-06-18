@@ -1,6 +1,6 @@
 
 
-var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("f1", "f2", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")));
 var practiceItemTypes = ["practice"];
 
 
@@ -14,18 +14,14 @@ var defaults = [
 
     "Message", {
         //"html" option is obligatory
-        hideProgressBar: false
+        hideProgressBar: false,
+        transfer: "keypress"
     },
 
     "DashedSentence", {
         //"s" option is obligatory
         mode: "self-paced reading"
           //other option: "speeded acceptability"
-    },
-
-    "FlashSentence", {
-      //"s" option is obligatory
-      transfer: "keypress"
     },
 
     "Question", {
@@ -98,6 +94,7 @@ var items = [
         }
     } ],
 
+
     /*
     ===================
     TEXT
@@ -109,7 +106,7 @@ var items = [
     ["practice", "DashedSentence", {s: "This is a practice sentence before the experiment begins."}],
 
     //all text with MC question
-    ["story", "Message", {html: "<center>This is a story you can see all at once!<br>Tanya and John were racing. She won.<br><b>Press any key to continue.</b></center>"},
+    ["story", "Message", {html: "<center>This is a story you can see all at once!<br><br>Tanya and John were racing. She won.<br><b>Press any key to continue.</b></center>"},
                  "Question", {hasCorrect: false, randomOrder: false,
                               //if a question has a correct answer (hasCorrect: true), you would have to put
                               //that answer as the first element in the "as" option.
@@ -126,7 +123,5 @@ var items = [
 
      //all text with scaling question
      ["story", "AcceptabilityJudgment", {s:"From a scale of 1 to 9, how has your morning been?",
-                                           as:["1","2","3","4","5","6","7","8","9"]}],
-
-
+                                           as:["1","2","3","4","5","6","7","8","9"]}]
 ];
