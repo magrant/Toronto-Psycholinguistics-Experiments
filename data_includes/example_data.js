@@ -102,9 +102,6 @@ var items = [
     ===================
     */
 
-
-
-
     //text displayed word by word
     ["practice", "DashedSentence", {s: "This is a practice sentence before the experiment begins."}],
 
