@@ -122,7 +122,7 @@ var items = [
 
     //word by word text with fill in the blank question
     ["story", "DashedSentence", {s: "Remember the story?"},
-     "Form", {html: 'Which player won the race: <input type="text" name="anything">'}],
+     "Form", {html: 'Which player won the race: <input type="text" name="winningPlayer">'}],
 
 
      //all text with scaling question
