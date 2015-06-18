@@ -129,7 +129,12 @@ var items = [
      ["story", "AcceptabilityJudgment", {s:"From a scale of 1 to 9, how has your morning been?",
                                            as:["1","2","3","4","5","6","7","8","9"]}],
 
-
+    /*
+    ===================
+    IMAGE
+    Controllers that work with Images and Questions
+    ===================
+    */
 
      // IMAGE + QUESTION
      ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "keypress"},
