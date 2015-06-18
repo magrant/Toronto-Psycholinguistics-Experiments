@@ -1,6 +1,6 @@
 
 
-var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("story", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")));
 var practiceItemTypes = ["practice"];
 
 
@@ -106,7 +106,7 @@ var items = [
     ["practice", "DashedSentence", {s: "This is a practice sentence before the experiment begins."}],
 
     //all text with MC question
-    ["story", "Message", {html: "<center>This is a story you can see all at once!<br>Tanya and John were racing. She won.<br><b>Press any key to continue.</b></center>"},
+    ["story", "Message", {html: "<center>This is a story you can see all at once!<br><br>Tanya and John were racing. She won.<br><b>Press any key to continue.</b></center>"},
                  "Question", {hasCorrect: false, randomOrder: false,
                               //if a question has a correct answer (hasCorrect: true), you would have to put
                               //that answer as the first element in the "as" option.
