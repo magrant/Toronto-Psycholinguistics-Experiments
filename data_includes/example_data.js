@@ -1,6 +1,10 @@
+/*
+--Toronto-Psycholinguistics-Experiments--
 
+Template that gives examples that use texts during the experiment
+*/
 
-var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")));
+var shuffleSequence = seq("intro", "practice", sepWith("sep", seq("story")));
 var practiceItemTypes = ["practice"];
 
 
@@ -121,7 +125,7 @@ var items = [
      "Form", {html: 'Which player won the race: <input type="text" name="anything">'}],
 
 
-     //all text with scaling question
+     //question with scaling answer option
      ["story", "AcceptabilityJudgment", {s:"From a scale of 1 to 9, how has your morning been?",
                                            as:["1","2","3","4","5","6","7","8","9"]}]
 ];
