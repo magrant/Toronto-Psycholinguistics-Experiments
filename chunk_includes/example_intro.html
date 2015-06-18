@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <title> Experiment Questionaire </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Experiment Questionaire </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
     body {
       background: url("http://s12.postimg.org/cosr5owot/QBack.png");
@@ -42,71 +42,141 @@
 
 <body class="body">
 <form style="width: 40em;">
-<h1>INTRO ABOUT EXPERIMENT SECTION</h1>
+<h1>WELCOME!</h1>
 <p>
-This experiment has two parts. In the first part, you will be required to read
-a number of English sentences one word at a time. You can advance to the next
-word by pressing the space bar.
+You are invited to participate in a research study on language. The purpose of this study is to investigate some of the properties of natural language.
 </p>
 <p>
-In the second part, you will be asked to &ldquo;rate&rdquo; some sentences
-on a scale of 1-7 (with 1 bad and 7 good).
+<b>What we will ask you to do: </b><br>If you agree to participate in this study, you will be asked to read sentences and rate them according to their naturalness, and/or answers questions about their content. Before beginning the study, you will be asked to fill out some basic information about your linguistic background and demographics.
 </p>
 <p>
-[Privacy statement, etc., etc.]
+<b>Risks and benefits: </b><br>This experiment involves no known risks or discomfort to you, nor is it expected to be of any direct benefit to you. You will receive a compensation for your participation through Amazon Mechanical Turk. Be sure to enter the correct worker ID at the end of the experiment so we can process your payment.
 </p>
-<h1> QUESTIONS SECTION</h1>
+<p>
+<b>Taking part is voluntary: </b><br>Your participation is completely voluntary. You are free to withdraw consent and discontinue participation in the project at any time.
+</p>
+<p>
+<b>Your answers will be confidential: </b><br>The responses will be stored on a password protected computer. The results we collect will not be linked to your identity.
+</p>
+<p>
+<b>If you have any questions: </b><br>Please also feel free to contact the investigators at _____EMAIL_____ if you have any questions. If you have any questions or concerns regarding your rights as a subject in this study, you may contact the Research Ethics Board Office at __________ or access their website at: _____URL______
+</p>
+
+<!-- concent validation -->
 <table>
 <tr>
-<td colspan="2" style="width: 30em; padding-bottom: 1em;">
+  <td><i>I have read the above information. I consent to take part in the study.  </i></td>
+  <td><input name="consent", class = "obligatory", type="radio" value="yes" id="consentyes"/>
+      <label for="consentcx">I consent</label></td>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="consent"></label></td>
+</tr>
+
+</table>
+
+
+
+<h1> SOME QUESTIONS </h1>
+<table>
+<tr>
+<td colspan="2" style="width: 30em; padding-bottom: 2em;">
 <i>(The form below is just a rough example showing all of the input controls that work properly
-with Ibex. Obviously it would not necessarily be appropriate to collect all of this
-data on subjects.)</i>
+with Ibex.)</i>
 </td>
 </tr>
+
+<!-- question with obligatory answer that has to be a number -->
 <tr>
-  <td>Name:</td><td><input name="name" type="text" size="30" class="obligatory" /></td>
-</tr>
-<tr>
-<td colspan="2"><label class="error" for="name"></label></td>
-</tr>
-<tr>
-  <td>Age:</td><td><input name="age" type="text" size="30" class="obligatory" /></td>
+  <td>What is your age?</td><td><input name="age" type="text" size="30" class="obligatory" /></td>
 </tr>
 <tr>
 <td colspan="2"><label class="error" for="age"></label></td>
 </tr>
+
+<!-- question with a small text box to answer, answer is obligatory -->
 <tr>
-  <td>Sex:</td><td><input name="sex" type="radio" value="male" class="obligatory" id="csexmale" /><label for="csexmale">Male </label>
-                   <input name="sex" type="radio" value="female" id="csexfemale"/><label for="csexfemale"> Female</label>
+  <td>What is your native language? </td><td><input name="language" type="text" size="30" class="obligatory" /></td>
 </tr>
 <tr>
-<td colspan="2"><label class="error" for="sex"></label></td>
+<td colspan="2"><label class="error" for="language"></label></td>
 </tr>
+
+<!-- question with a big text box to answer, answer is NOT obligatory -->
 <tr>
-<td colspan="2" style="padding-bottom: 1em;"><input type="checkbox" name="credit" id="creditcx" /><label for="creditcx"> I am doing this experiment for credit</label></td>
-</tr>
-<tr>
-<td colspan="2" style="padding-bottom: 1em;"><input type="checkbox" class="obligatory" name="consent" id="consentcx" /><label for="consentcx"> I consent</label></td>
-</tr>
-<tr>
-<td colspan="2">
-<label class="error" for="consent"></label>
-</td>
-</tr>
-<tr>
-  <td colspan="2">Write something:</td>
+  <td colspan="2">What other languages do you speak?</td>
 </tr>
 <tr>
   <td colspan="2">
-    <textarea name="write_something" rows="5" cols="40"></textarea>
+    <textarea name="otherlang" rows="5" cols="40"></textarea>
   </td>
 </tr>
+
+<!-- question with yes or no answer -->
+<tr>
+  <td>Have you ever taken a linguistics class?</td><td><input name="linclass" type="radio" value="yes" class="obligatory" id="linclassyes" /><label for="linclassyes">Yes</label>
+                   <input name="linclass" type="radio" value="no" id="linclassno"/>
+                   <label for="linclassno">No</label>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="linclass"></label></td>
+</tr>
+
+
+
+<tr>
+  <td>How often do you read: <i>(daily, weekly, occasionally, never)</i></td>
+</tr>
+<!-- fiction scale -->
+<tr>
+  <td>&nbsp &nbsp &nbsp Fiction: </td>
+  <td>
+    <!-- the buttons for the scalng option -->
+    <table id="Scaling">
+      <tr>
+         <td><label>Daily <input id="daily" type="radio" name="readingfic" value="daily" /></label></td>
+         <td><label><input type="radio" name="readingfic" value="weekly" /></label></td>
+         <td><label><input type="radio" name="readingfic" value="occasionally" /></label></td>
+         <td><label><input id="never" type="radio" name="readingfic" value="never" /> Never</label></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="readingfic"></label></td>
+</tr>
+
+
+<!-- Non-fiction scale -->
+<tr>
+  <td>&nbsp &nbsp &nbsp Non-fiction: </td>
+  <td>
+    <!-- the buttons for the scalng option -->
+    <table id="Scaling">
+      <tr>
+         <td><label>Daily <input id="daily" type="radio" name="readingnonfic" value="daily" /></label></td>
+         <td><label><input type="radio" name="readingnonfic" value="weekly" /></label></td>
+         <td><label><input type="radio" name="readingnonfic" value="occasionally" /></label></td>
+         <td><label><input id="never" type="radio" name="readingnonfic" value="never" /> Never</label></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="readingnonfic"></label></td>
+</tr>
+
+<!-- square checkbox that is not obligatory -->
+<tr>
+<td colspan="2" style="padding-bottom: 1em;"><input type="checkbox" name="credit" id="creditcx" /><label for="creditcx"> I am doing this experiment for credit</label></td>
+</tr>
 </table>
-
-<br><br>
-<input type="submit" value="Submit">
-
 </form>
+
+
+
+
+
+
 </body>
 </html>
