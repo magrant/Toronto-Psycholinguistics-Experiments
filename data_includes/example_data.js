@@ -1,6 +1,10 @@
+/*
+--Toronto-Psycholinguistics-Experiments--
 
+Template that gives examples of everything Ibex can do for experiments
+*/
 
-var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")));
+var shuffleSequence = seq("intro", "practice", sepWith("sep", seq("story")), "image");
 var practiceItemTypes = ["practice"];
 
 
@@ -128,11 +132,11 @@ var items = [
 
 
      // IMAGE + QUESTION
-     ["story", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "keypress"},
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "keypress"},
               "Question", {q: "Whats under 'Language'?",
                             as: ["Knowledge", "Skill", "Math", "Research"]}],
 
-     ["story", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>WAIT</p>', transfer: 6000}],
-     ["story", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /> <br><p>CLICK</p>', transfer: "click"}]
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>WAIT</p>', transfer: 6000}],
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /> <br><p>CLICK</p>', transfer: "click"}]
 
 ];
