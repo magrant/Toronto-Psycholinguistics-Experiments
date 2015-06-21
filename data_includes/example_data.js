@@ -4,7 +4,7 @@
 Template that gives examples of everything Ibex can do for experiments
 */
 
-var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")), "image");
+var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")), sepWith("sep", seq("image")));
 var practiceItemTypes = ["practice"];
 
 
@@ -31,6 +31,8 @@ var defaults = [
     "Question", {
         //"as" option is obligatory
         hasCorrect: true
+          //if a question has a correct answer,
+            //keep it as the first element of the "as" option
     },
 
     "AcceptabilityJudgment", {
@@ -101,47 +103,23 @@ var items = [
 
     /*
     ===================
-    TEXT
-    Controllers that work with Text and Questions
-    ===================
-    */
-
-    //text displayed word by word
-    ["practice", "DashedSentence", {s: "This is a practice sentence before the experiment begins."}],
-
-    //all text with MC question
-    ["story", "Message", {html: "<center>This is a story you can see all at once!<br><br>Tanya and John were racing. She won.<br><b>Press any key to continue.</b></center>"},
-                 "Question", {hasCorrect: false, randomOrder: false,
-                              //if a question has a correct answer (hasCorrect: true), you would have to put
-                              //that answer as the first element in the "as" option.
-                              q: "How would you like to answer this question?",
-                              as: ["Press 1 or click here for this answer.", //this would be the correct answer if hasCorrect:true
-                                   "Press 2 or click here for this answer.",
-                                   "Press 3 or click here for this answer."]}],
-
-
-    //word by word text with fill in the blank question
-    ["story", "DashedSentence", {s: "Remember the story?"},
-     "Form", {html: 'Which player won the race: <input type="text" name="winningPlayer">'}],
-
-
-     //all text with scaling question
-     ["story", "AcceptabilityJudgment", {s:"From a scale of 1 to 9, how has your morning been?",
-                                           as:["1","2","3","4","5","6","7","8","9"]}],
-
-    /*
-    ===================
     IMAGE
     Controllers that work with Images and Questions
     ===================
     */
 
-     // IMAGE + QUESTION
+     //image that needs to be clicked
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "click"}],
+
+
+     //image with keypress, was a question that has a correct answer
+     //let hasCorrect: false, if optinion based question
      ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "keypress"},
-              "Question", {q: "Whats under 'Language'?",
+              "Question", {q: "Whats under 'Language'?", //the answer to this is "Knowlege"
                             as: ["Knowledge", "Skill", "Math", "Research"]}],
 
-     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>WAIT</p>', transfer: 6000}],
-     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /> <br><p>CLICK</p>', transfer: "click"}]
+      //image that has a timer with a fill in question
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>Please wait</p>', transfer: 10000},//look at image for 10secs
+        "Form", {html: 'Write something about image here: <input type="text" name="aboutImg">'}]
 
 ];
