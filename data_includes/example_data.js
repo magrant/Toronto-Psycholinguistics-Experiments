@@ -4,7 +4,7 @@
 Template that gives examples of everything Ibex can do for experiments
 */
 
-var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")), "image");
+var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")), sepWith("sep", seq("image")));
 var practiceItemTypes = ["practice"];
 
 
@@ -150,7 +150,7 @@ var items = [
                             as: ["Knowledge", "Skill", "Math", "Research"]}],
 
       //image that has a timer with a fill in question
-     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>Please wait</p>', transfer: 30000},//look at image for 30secs
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>Please wait</p>', transfer: 10000},//look at image for 10secs
         "Form", {html: 'Write something about image here: <input type="text" name="aboutImg">'}]
 
 ];
