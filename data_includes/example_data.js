@@ -140,7 +140,7 @@ var items = [
     */
 
      //image that needs to be clicked
-     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "click"}]
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "click"}],
 
 
      //image with keypress, was a question that has a correct answer
@@ -150,7 +150,7 @@ var items = [
                             as: ["Knowledge", "Skill", "Math", "Research"]}],
 
       //image that has a timer with a fill in question
-     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>Please wait</p>', transfer: 30000}//look at image for 30secs
-        "Form", {html: 'Write something about image here: <input type="text" name="aboutImg">'}],
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>Please wait</p>', transfer: 30000},//look at image for 30secs
+        "Form", {html: 'Write something about image here: <input type="text" name="aboutImg">'}]
 
 ];
