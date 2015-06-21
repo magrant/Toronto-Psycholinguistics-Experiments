@@ -31,6 +31,8 @@ var defaults = [
     "Question", {
         //"as" option is obligatory
         hasCorrect: true
+          //if a question has a correct answer,
+            //keep it as the first element of the "as" option
     },
 
     "AcceptabilityJudgment", {
@@ -130,13 +132,25 @@ var items = [
                                            as:["1","2","3","4","5","6","7","8","9"]}],
 
 
+    /*
+    ===================
+    IMAGE
+    Controllers that work with Images and Questions
+    ===================
+    */
 
-     // IMAGE + QUESTION
+     //image that needs to be clicked
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "click"}]
+
+
+     //image with keypress, was a question that has a correct answer
+     //let hasCorrect: false, if optinion based question
      ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" />', transfer: "keypress"},
-              "Question", {q: "Whats under 'Language'?",
+              "Question", {q: "Whats under 'Language'?", //the answer to this is "Knowlege"
                             as: ["Knowledge", "Skill", "Math", "Research"]}],
 
-     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>WAIT</p>', transfer: 6000}],
-     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /> <br><p>CLICK</p>', transfer: "click"}]
+      //image that has a timer with a fill in question
+     ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>Please wait</p>', transfer: 30000}//look at image for 30secs
+        "Form", {html: 'Write something about image here: <input type="text" name="aboutImg">'}],
 
 ];
