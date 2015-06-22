@@ -6123,3 +6123,298 @@
 #     Col. 8: Apprehension time.
 1434658843,8c87995f4519dddafd24bf59a5554302,Question,3,0,q3,NULL,Did you hear anything?,Yes,NULL,1614
 1434658843,8c87995f4519dddafd24bf59a5554302,Message,5,0,q5,NULL,7116
+#
+# Results on Monday June 22 2015 18:25:00 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 149
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1434997500,8c87995f4519dddafd24bf59a5554302,DashedSentence,1,0,q1,NULL,Your text here
+1434997500,8c87995f4519dddafd24bf59a5554302,Question,1,1,q1,NULL,Your Question here,Yes,NULL,585
+1434997500,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,test1.mp3
+1434997500,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,NULL,OK,NULL,1694
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Apprehension time.
+1434997500,8c87995f4519dddafd24bf59a5554302,Question,3,0,q3,NULL,Did you hear anything?,No,NULL,1251
+1434997500,8c87995f4519dddafd24bf59a5554302,Message,5,0,q5,NULL,7234
+#
+# Results on Monday June 22 2015 18:28:54 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 150
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1434997734,8c87995f4519dddafd24bf59a5554302,DashedSentence,1,0,q1,NULL,Your text here
+1434997734,8c87995f4519dddafd24bf59a5554302,Question,1,1,q1,NULL,Your Question here,Yes,NULL,10195
+1434997734,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,test1.mp3
+1434997734,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,NULL,OK,NULL,4486
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Apprehension time.
+1434997734,8c87995f4519dddafd24bf59a5554302,Question,3,0,q3,NULL,Did you hear anything?,Yes,NULL,1334
+1434997734,8c87995f4519dddafd24bf59a5554302,Message,5,0,q5,NULL,1716
+#
+# Results on Monday June 22 2015 18:29:20 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 151
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1434997760,8c87995f4519dddafd24bf59a5554302,DashedSentence,1,0,q1,NULL,Your text here
+1434997760,8c87995f4519dddafd24bf59a5554302,Question,1,1,q1,NULL,Your Question here,Yes,NULL,986
+1434997760,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,test1.mp3
+1434997760,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,NULL,OK,NULL,3055
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Apprehension time.
+1434997760,8c87995f4519dddafd24bf59a5554302,Question,3,0,q3,NULL,Did you hear anything?,Yes,NULL,1380
+1434997760,8c87995f4519dddafd24bf59a5554302,Message,5,0,q5,NULL,353
+#
+# Results on Monday June 22 2015 18:47:58 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 152
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1434998879,8c87995f4519dddafd24bf59a5554302,DashedSentence,1,0,q1,NULL,Your text here
+1434998879,8c87995f4519dddafd24bf59a5554302,Question,1,1,q1,NULL,Your Question here,Yes,NULL,232
+1434998879,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,test1.mp3
+1434998879,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,NULL,OK,NULL,6294
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Apprehension time.
+1434998879,8c87995f4519dddafd24bf59a5554302,Question,3,0,q3,NULL,Did you hear anything?,No,NULL,904
+1434998879,8c87995f4519dddafd24bf59a5554302,Message,5,0,q5,NULL,1411
+#
+# Results on Monday June 22 2015 18:48:44 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 153
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1434998925,8c87995f4519dddafd24bf59a5554302,DashedSentence,1,0,q1,NULL,Your text here
+1434998925,8c87995f4519dddafd24bf59a5554302,Question,1,1,q1,NULL,Your Question here,Yes,NULL,757
+1434998925,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,test1.mp3
+1434998925,8c87995f4519dddafd24bf59a5554302,AcceptabilityJudgment,2,0,q2,NULL,NULL,OK,NULL,1836
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Apprehension time.
+1434998925,8c87995f4519dddafd24bf59a5554302,Question,3,0,q3,NULL,Did you hear anything?,Yes,NULL,1093
+1434998925,8c87995f4519dddafd24bf59a5554302,Message,5,0,q5,NULL,708
