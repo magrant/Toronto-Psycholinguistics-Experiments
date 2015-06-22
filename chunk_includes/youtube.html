@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+  /*the trick is to put on a transparent div over the video*/
+  .container {position: absolute; top: 170px; left: 505px; width: 330px; height: 300px; z-index: inherit}
+  </style>
+</head>
+
+<body>
+  <div class="video" style="margin: 30px auto 20px 150px; width: 100px; height: 100px; z-index: 0">
+    <!-- in order to show controls, set controls=1 (which is default anyway, so you can just leave it out) -->
+    <iframe width="320" height="240" src="https://www.youtube.com/embed/GAF82sg17oA?autoplay=1&controls=0&disablekb=1" frameborder="0" allowfullscreen></iframe>
+    <!-- transparent container -->
+    <div class="container"></div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".container").bind("contextmenu", function() {
+        return false;
+      });
+    });
+  </script>
+
+</body>
+
+</html>

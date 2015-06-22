@@ -1,0 +1,51 @@
+<!DOCTYPE=html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <!-- Use the following line to find out duration of video -->
+  <!-- <button onclick="myFunction()" type="button">Get video length</button> -->
+  <div class="video" style="margin: 30px auto 20px 150px; width: 100px; height: 100px; z-index: 0">
+    <!-- another way of embedding video, not very useful, as you cannot disable controls -->
+    <!-- <embed type="audio/wav" src="http://grant-psycholinguistics.com/wp-content/uploads/2015/04/VOT_0.wav" width="400" height="100"></embed> -->
+    <!-- only wav or mp3 files have been tested, ogg could most probably work as well -->
+    <!-- if you don't want autoplay, just remove it, it is a boolean
+    similarly, if you want video display, add controls, if not, leave it out -->
+    <video id="myvid" width="320" height="240" preload="auto" autoplay>
+      <!-- again src must be a link to a website where the video file is hosted -->
+      <source src="http://www.w3schools.com/html/movie.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <script type="text/javascript">
+    function showVid() {
+      document.getElementById('video').style.visibility = 'hidden';
+    }
+  </script>
+
+  <!-- Below is the script used to disable right clicking to show controls etc. -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("video").bind("contextmenu", function() {
+        return false;
+      });
+    });
+  </script>
+
+  <!-- Below is the script for finding duration of video
+  <script type="text/javascript">
+    var vid = document.getElementById("myvid");
+
+    function myFunction() {
+      alert("Video length is " + vid.duration + ' seconds');
+    }
+  </script>
+   -->
+</body>
+
+</html>

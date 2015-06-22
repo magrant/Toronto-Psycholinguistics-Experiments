@@ -1,0 +1,133 @@
+
+#
+# Results on Wednesday June 03 2015 03:09:32 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36
+# Design number was non-random = 0
+#
+[false,0,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"filler"],[4,"NULL"],[5,"Here's a silly filler sentence"]],[[0,"Question"],[1,1],[2,1],[3,"filler"],[4,"NULL"],[6,"Is this a filler sentence?"],[7,"Yes"],[8,"NULL"],[9,4514]],[[0,"DashedSentence"],[1,2],[2,0],[3,"filler"],[4,"NULL"],[5,"And another silly filler sentence"]],[[0,"Question"],[1,2],[2,1],[3,"filler"],[4,"NULL"],[6,"Does this sentence have a relative clause?"],[7,"Yes"],[8,"NULL"],[9,542]],[[0,"DashedSentence"],[1,3],[2,0],[3,"relclause"],[4,"NULL"],[5,"A sentence that has a relative clause"]],[[0,"Question"],[1,3],[2,1],[3,"relclause"],[4,"NULL"],[6,"Was there movement through [Spec%2CCP]?"],[7,"Yes"],[8,"NULL"],[9,942]],[[0,"DashedSentence"],[1,4],[2,0],[3,"relclause"],[4,"NULL"],[5,"Another sentence that has a relative clause"]],[[0,"Question"],[1,4],[2,1],[3,"relclause"],[4,"NULL"],[6,"Was the first word of that sentence 'frog'?"],[7,"No"],[8,"NULL"],[9,3820]]],"6dyrlzhALSRVxTlmAjqFWg",true]
+#
+# Results on Wednesday June 03 2015 03:59:58 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36
+# Design number was non-random = 1
+#
+[false,1,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,2847]],[[0,"AcceptabilityJudgment"],[1,2],[2,0],[3,"q2"],[4,"NULL"],[5,"undefined"]],[[0,"AcceptabilityJudgment"],[1,2],[2,0],[3,"q2"],[4,"NULL"],[6,"Your Question"],[7,"the options you provide"],[8,"NULL"],[9,5169]]],"6dyrlzhALSRVxTlmAjqFWg",true]
+#
+# Results on Wednesday June 03 2015 04:37:47 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36
+# Design number was non-random = 2
+#
+[false,2,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,1591]]],"6dyrlzhALSRVxTlmAjqFWg",true]
+#
+# Results on Wednesday June 03 2015 04:40:31 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36
+# Design number was non-random = 3
+#
+[false,3,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,1247]]],"6dyrlzhALSRVxTlmAjqFWg",true]
+#
+# Results on Wednesday June 03 2015 05:27:49 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36
+# Design number was non-random = 4
+#
+[false,4,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,441]]],"6dyrlzhALSRVxTlmAjqFWg",true]
+#
+# Results on Thursday June 04 2015 04:31:09 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36
+# Design number was non-random = 5
+#
+[false,5,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,673]],[[0,"AcceptabilityJudgment"],[1,2],[2,0],[3,"q2"],[4,"NULL"],[5,"test1.mp3"]],[[0,"AcceptabilityJudgment"],[1,2],[2,0],[3,"q2"],[4,"NULL"],[6,"NULL"],[7,"1"],[8,"NULL"],[9,2055]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"Did you hear anything?"],[7,"Yes"],[8,"NULL"],[9,1719]]],"6dyrlzhALSRVxTlmAjqFWg",true]
+#
+# Results on Friday June 12 2015 20:58:33 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36
+# Design number was non-random = 6
+#
+[false,6,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,704]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"Did you hear anything?"],[7,"Yes"],[8,"NULL"],[9,1263]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Friday June 12 2015 21:02:45 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36
+# Design number was non-random = 7
+#
+[false,7,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,746]],[[0,"AcceptabilityJudgment"],[1,2],[2,0],[3,"q2"],[4,"NULL"],[5,"test1.mp3"]],[[0,"AcceptabilityJudgment"],[1,2],[2,0],[3,"q2"],[4,"NULL"],[6,"NULL"],[7,"1"],[8,"NULL"],[9,965]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"Did you hear anything?"],[7,"Yes"],[8,"NULL"],[9,594]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Saturday June 13 2015 19:26:10 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0
+# Design number was non-random = 8
+#
+[false,8,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,303]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"Did you hear anything?"],[7,"Yes"],[8,"NULL"],[9,569]]],"Ycrpnxvhtcl7oGnuvt4UsQ",true]
+#
+# Results on Saturday June 13 2015 19:42:15 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 9
+#
+[false,9,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,658]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"Did you hear anything?"],[7,"Yes"],[8,"NULL"],[9,1309]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Saturday June 13 2015 19:55:02 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 10
+#
+[false,10,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"Yes"],[8,"NULL"],[9,530]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"Did you hear anything?"],[7,"Yes"],[8,"NULL"],[9,5361]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Saturday June 13 2015 20:20:47 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 11
+#
+[false,11,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"your choices"],[8,"NULL"],[9,496]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,1490]],[[0,"Question"],[1,5],[2,0],[3,"q3"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,217427]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Saturday June 13 2015 20:52:44 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 12
+#
+[false,12,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"your choices"],[8,"NULL"],[9,1563]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,2523]],[[0,"Question"],[1,5],[2,0],[3,"q3"],[4,"NULL"],[6,"What did you see?"],[7,"Bear"],[8,"NULL"],[9,2572]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Saturday June 13 2015 21:05:18 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 13
+#
+[false,13,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Your text here"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question here"],[7,"your choices"],[8,"NULL"],[9,389582]],[[0,"Question"],[1,3],[2,0],[3,"q3"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,1225]],[[0,"Question"],[1,5],[2,0],[3,"q3"],[4,"NULL"],[6,"What did you see?"],[7,"Bear"],[8,"NULL"],[9,2106]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Sunday June 14 2015 03:41:55 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 14
+#
+[false,14,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,3033]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Nothing"],[8,"NULL"],[9,2766]],[[0,"Question"],[1,5],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,1730]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Sunday June 14 2015 05:48:13 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 15
+#
+[false,15,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,355]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Nothing"],[8,"NULL"],[9,541]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Bear"],[8,"NULL"],[9,1574]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Sunday June 14 2015 05:57:11 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 16
+#
+[false,16,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,506]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,724]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,427]],[[0,"Question"],[1,8],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,1677]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Sunday June 14 2015 22:51:06 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 17
+#
+[false,17,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,535]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,1780]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Elephant"],[8,"NULL"],[9,1382]],[[0,"Question"],[1,8],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,953]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Wednesday June 17 2015 00:04:10 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 18
+#
+[false,18,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,1187]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,2117]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Bear"],[8,"NULL"],[9,2003]],[[0,"Question"],[1,8],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,2502]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Thursday June 18 2015 20:19:03 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 19
+#
+[false,19,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,4882]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,1765]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,1858]],[[0,"Question"],[1,8],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Bunny"],[8,"NULL"],[9,1779]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Thursday June 18 2015 20:26:09 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0
+# Design number was non-random = 20
+#
+[false,20,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,706]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Elephant"],[8,"NULL"],[9,1133]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"Elephant"],[8,"NULL"],[9,1015]],[[0,"Question"],[1,8],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,64976]]],"Ycrpnxvhtcl7oGnuvt4UsQ",true]
+#
+# Results on Monday June 22 2015 19:16:13 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.125 Safari/537.36
+# Design number was non-random = 21
+#
+[false,21,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,749]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,493]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,663]],[[0,"Question"],[1,8],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,1180]]],"fP3dHplM/3ykCzHFqYf0dQ",true]

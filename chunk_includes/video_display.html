@@ -1,0 +1,33 @@
+<!DOCTYPE=html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="video" style="margin: 30px auto 20px 150px; width: 100px; height: 100px; z-index: 0">
+    <!-- another way of embedding video, not very useful, as you cannot disable controls -->
+    <!-- <embed type="video/mp4" src="http://www.w3schools.com/html/mov_bbb.mp4" width="400" height="100"></embed> -->
+    <!-- only wav or mp3 files have been tested, ogg could most probably work as well -->
+    <!-- if you don't want autoplay, just remove it, it is a boolean
+    similarly, if you want video display, add controls, if not, leave it out -->
+    <video width="320" height="240" preload="auto" autoplay controls>
+      <!-- //these video files, like the audio files have to be on a website,
+      //you can only put in url's in src, cannot be files on your computer
+      //usually(in direct html), this would work, but again ibex is very restrictive -->
+      <!-- for those who like to use exotic video types, you can always look up your type
+      here http://www.iana.org/assignments/media-types/media-types.xhtml#video -->
+      <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+  </div>
+  <script type="text/javascript">
+    function showVid() {
+      document.getElementById('video').style.visibility = 'hidden';
+    }
+  </script>
+</body>
+
+</html>
