@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="sound" style="margin: 30px auto 20px 150px; width: 100px; height: 100px; z-index: 0">
+    <!-- another way of embedding audio, not very useful, as you cannot disable controls -->
+    <!-- <embed type="audio/wav" src="http://grant-psycholinguistics.com/wp-content/uploads/2015/04/VOT_0.wav" width="400" height="100"></embed> -->
+    <!-- only wav or mp3 files have been tested, ogg could most probably work as well -->
+    <!-- if you don't want autoplay, just remove it, it is a boolean
+    similarly, if you want video display, add controls, if not, leave it out -->
+    <audio autoplay controls>
+      <!-- if mp3, then type='audio/mpeg', if way, then type='audio/wav' and similarly for ogg, 'audio/ogg' -->
+      <!-- src has to be a url, cannot be a file on your computer, usually works in regular html,
+      but does not work while using the ibex framework -->
+      <source src="http://grant-psycholinguistics.com/wp-content/uploads/2015/04/VOT_0.wav" type="audio/wav">
+    </audio>
+  </div>
+</body>
+
+</html>
