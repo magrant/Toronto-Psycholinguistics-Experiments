@@ -143,3 +143,9 @@
 # Design number was non-random = 23
 #
 [false,23,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,449]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,528]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,420]],[[0,"Question"],[1,8],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,314]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
+#
+# Results on Wednesday June 24 2015 19:26:12 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36
+# Design number was non-random = 24
+#
+[false,24,["Controller name","Item number","Element number","Type","Group","Sentence (or sentence MD5)","Question (NULL if none).","Answer","Whether or not answer was correct (NULL if N/A)","Time taken to answer."],[[[0,"DashedSentence"],[1,1],[2,0],[3,"q1"],[4,"NULL"],[5,"Watch a few videos"]],[[0,"Question"],[1,1],[2,1],[3,"q1"],[4,"NULL"],[6,"Your Question/Message here"],[7,"your choices"],[8,"NULL"],[9,254]],[[0,"Question"],[1,3],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,355]],[[0,"Question"],[1,6],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,379]],[[0,"Question"],[1,8],[2,0],[3,"q1"],[4,"NULL"],[6,"What did you see?"],[7,"People fighting"],[8,"NULL"],[9,240]]],"fP3dHplM/3ykCzHFqYf0dQ",true]
