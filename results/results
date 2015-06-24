@@ -976,3 +976,49 @@
 1435173721,1510a5f482952981edd6bf6db1568b43,Question,3,0,q1,NULL,What did you see?,People fighting,NULL,496
 1435173721,1510a5f482952981edd6bf6db1568b43,Question,6,0,q1,NULL,What did you see?,People fighting,NULL,647
 1435173721,1510a5f482952981edd6bf6db1568b43,Question,8,0,q1,NULL,What did you see?,People fighting,NULL,987
+#
+# Results on Wednesday June 24 2015 19:24:46 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36
+# Design number was non-random = 23
+#
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1435173887,1510a5f482952981edd6bf6db1568b43,DashedSentence,1,0,q1,NULL,Watch a few videos
+1435173887,1510a5f482952981edd6bf6db1568b43,Question,1,1,q1,NULL,Your Question/Message here,your choices,NULL,449
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Question (NULL if none).
+# 9. Answer.
+# 10. Whether or not answer was correct (NULL if N/A).
+# 11. Time taken to answer.
+1435173887,1510a5f482952981edd6bf6db1568b43,Question,3,0,q1,NULL,What did you see?,People fighting,NULL,528
+1435173887,1510a5f482952981edd6bf6db1568b43,Question,6,0,q1,NULL,What did you see?,People fighting,NULL,420
+1435173887,1510a5f482952981edd6bf6db1568b43,Question,8,0,q1,NULL,What did you see?,People fighting,NULL,314
