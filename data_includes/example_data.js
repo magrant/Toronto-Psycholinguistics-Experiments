@@ -4,8 +4,9 @@
 Template that gives examples of everything Ibex can do for experiments
 */
 
-var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")), sepWith("sep", seq("image")), sepWith("sep", startsWith("q")));
+var shuffleSequence = seq("intro", "practice", sepWith("sep", seq("story")), sepWith("sep", seq("image")), sepWith("sep", startsWith("q")));
 var practiceItemTypes = ["practice"];
+var centerItems = true;
 
 
 var defaults = [
