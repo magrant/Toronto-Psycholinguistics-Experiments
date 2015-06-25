@@ -86,8 +86,8 @@ var items = [
 
   /*
   ===================
-  SOUND
-  Audio samples with and without questions
+  VIDEO
+  Video samples with options
   ===================
   */
 
