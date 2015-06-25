@@ -4,7 +4,7 @@
 Template that gives examples of everything Ibex can do for experiments
 */
 
-var shuffleSequence = seq("intro", "sep", startsWith("q"));
+var shuffleSequence = seq(/*"intro",*/ "sep", startsWith("q"));
 var centerItems = true;
 
 
