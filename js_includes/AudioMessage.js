@@ -1,7 +1,7 @@
 /* This software is licensed under a BSD license; see the LICENSE file for details. */
 
 define_ibex_controller({
-name: "Message",
+name: "AudioMessage",
 
 jqueryWidget: {
     _init: function () {
@@ -12,12 +12,11 @@ jqueryWidget: {
         this.html = this.options.html;
         this.element.addClass(this.cssPrefix + "message");
         this.element.append(htmlCodeToDOM(this.html));
-        this.resultsLines = [];
 
         // Bit of copy/pasting from 'Separator' here.
         this.transfer = dget(this.options, "transfer", "click");
-        assert((! this.transfer) || this.transfer == "click" || this.transfer == "keypress" || typeof(this.transfer) == "number",
-               "Value of 'transfer' option of Message must either be the string 'click' or a number");
+        assert((! this.transfer) || this.transfer == "click" || this.transfer == "keypress" || this.transfer == "audio-end" || typeof(this.transfer) == "number",
+               "Value of 'transfer' option of Message must either be the strings 'click', 'keypress', 'audio-end' or a number");
 
         if (this.transfer == "click") {
             this.continueMessage = dget(this.options, "continueMessage", "Click here to continue.");
@@ -81,8 +80,14 @@ jqueryWidget: {
         else if (this.transfer == "keypress") {
             var t = this;
             this.safeBind($(document), 'keydown', function () {
-                var endTime = new Date();
-                t.finishedCallback([[['Apprehension time', endTime - t.creationTime]]]);
+                t.finishedCallback(null);
+                return false;
+            });
+        }
+        else if (this.transfer == "audio-end") {
+            var t = this;
+            this.safeBind($(".audio-message"), 'ended', function(){
+                t.finishedCallback(null);
                 return false;
             });
         }
@@ -90,8 +95,6 @@ jqueryWidget: {
             assert(! this.consentRequired, "The 'consentRequired' option of the Message controller can only be set to true if the 'transfer' option is set to 'click'.");
             this.utils.setTimeout(this.finishedCallback, this.transfer);
         }
-
-        this.creationTime = new Date();
     }
 },
 
