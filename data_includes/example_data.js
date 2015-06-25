@@ -4,7 +4,7 @@
 Template that gives examples that use texts during the experiment
 */
 
-var shuffleSequence = seq("intro", "practice", sepWith("sep", seq("story")));
+var shuffleSequence = seq(/*"intro",*/ "practice", sepWith("sep", seq("story")));
 var practiceItemTypes = ["practice"];
 
 
