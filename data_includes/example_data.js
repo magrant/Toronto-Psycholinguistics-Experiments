@@ -1,5 +1,12 @@
-var shuffleSequence = sepWith("sep", not("sep"));
+/*
+--Toronto-Psycholinguistics-Experiments--
+
+Template that gives examples of everything Ibex can do for experiments
+*/
+
+var shuffleSequence = seq("intro", "sep", startsWith("q"));
 var centerItems = true;
+
 
 var defaults = [
   "Question", {
@@ -26,6 +33,14 @@ var defaults = [
 ];
 
 var items = [
+
+  /*
+  ===================
+  SEPARATOR
+  The pause needed between each item of the experiment
+  ===================
+  */
+
   // Change the transfer to the number of milliseconds you want in between questions
   // and change your normalMessage according to what you want the client
   // to see while this break
@@ -33,6 +48,30 @@ var items = [
     transfer: 1000,
     normalMessage: "Please wait for the next item."
   }],
+
+
+  /*
+  ===================
+  INTRODUCTION
+  Can include files for Questionnaires, consent forms etc...
+  ===================
+  */
+
+  //name of controller
+  ["intro",
+    //type
+    "Form",
+    //obligatory option that includes a HTML file that is a questionnaire
+    {html: { include: "example_intro.html" }, hideProgressBar: 'true',
+    //fields that need to have the right format when taking input from user
+    validators: {
+      //age has to be a number
+      age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
+      }
+  }],
+
+
+
   //The following are text followed by questions
   //You can create more instances of these by just adding more such arrays
   ["q1", "DashedSentence", {
@@ -43,6 +82,14 @@ var items = [
       as: ['your choices', 'options to give']
     }
   ],
+
+
+  /*
+  ===================
+  SOUND
+  Audio samples with and without questions
+  ===================
+  */
 
   //Video type 1, display everything and keypress to continue
   //participant can loop over as many times as they want
