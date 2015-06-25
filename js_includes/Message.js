@@ -12,6 +12,7 @@ jqueryWidget: {
         this.html = this.options.html;
         this.element.addClass(this.cssPrefix + "message");
         this.element.append(htmlCodeToDOM(this.html));
+        this.resultsLines = [];
 
         // Bit of copy/pasting from 'Separator' here.
         this.transfer = dget(this.options, "transfer", "click");
@@ -80,7 +81,8 @@ jqueryWidget: {
         else if (this.transfer == "keypress") {
             var t = this;
             this.safeBind($(document), 'keydown', function () {
-                t.finishedCallback(null);
+                var endTime = new Date();
+                t.finishedCallback([[['Apprehension time', endTime - t.creationTime]]]);
                 return false;
             });
         }
@@ -88,6 +90,8 @@ jqueryWidget: {
             assert(! this.consentRequired, "The 'consentRequired' option of the Message controller can only be set to true if the 'transfer' option is set to 'click'.");
             this.utils.setTimeout(this.finishedCallback, this.transfer);
         }
+
+        this.creationTime = new Date();
     }
 },
 
