@@ -164,7 +164,13 @@ var items = [
      ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>Please wait</p>', transfer: 10000},//look at image for 10secs
         "Form", {html: 'Write something about image here: <input type="text" name="aboutImg">'}],
 
-
+     //Multiple choice question with image options
+     ["image","PictureAccept", {s: "The sentence you want to show",
+                            //specify to press key "A" for image 1 in the as list, etc...
+                            as: [["A","http://edl.ecml.at/Portals/33/images/EDL_Logo1.jpg"],
+                                 ["B","http://edl.ecml.at/Portals/33/images/EDL_Logo1.jpg"],
+                                 ["C","http://edl.ecml.at/Portals/33/images/EDL_Logo1.jpg"],
+                                 ["D","http://edl.ecml.at/Portals/33/images/EDL_Logo1.jpg"]]}],
 
     /*
     ===================
