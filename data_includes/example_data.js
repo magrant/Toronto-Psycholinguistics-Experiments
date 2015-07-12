@@ -167,10 +167,10 @@ var items = [
      //Multiple choice question with image options
      ["image","PictureAccept", {s: "The sentence you want to show",
                             //specify to press key "A" for image 1 in the as list, etc...
-                            as: [["A","http://edl.ecml.at/Portals/33/images/EDL_Logo1.jpg"],
-                                 ["B","http://edl.ecml.at/Portals/33/images/EDL_Logo1.jpg"],
-                                 ["C","http://edl.ecml.at/Portals/33/images/EDL_Logo1.jpg"],
-                                 ["D","http://edl.ecml.at/Portals/33/images/EDL_Logo1.jpg"]]}],
+                            as: [["A","http://s7.postimg.org/sxksy19y3/EDL_Logo1.jpg"],
+                                 ["B","http://s7.postimg.org/sxksy19y3/EDL_Logo1.jpg"],
+                                 ["C","http://s7.postimg.org/sxksy19y3/EDL_Logo1.jpg"],
+                                 ["D","http://s7.postimg.org/sxksy19y3/EDL_Logo1.jpg"]]}],
 
     /*
     ===================
@@ -273,6 +273,7 @@ var items = [
     ["q1", "Question", {
       q: 'Did you see anything?'
     }]
+
 
 
 ];
