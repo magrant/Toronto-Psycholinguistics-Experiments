@@ -1,0 +1,19 @@
+
+img {
+  padding: 1px;
+  margin: 1em auto;
+  float: center;
+}
+
+li.scale-box {
+    list-style: none;
+    float: center;
+}
+span.fake-link {
+    color: blue;
+    cursor: pointer;
+}
+span:hover.fake-link {
+    cursor: pointer;
+}
+

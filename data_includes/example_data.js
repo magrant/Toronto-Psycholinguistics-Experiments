@@ -119,6 +119,15 @@ var items = [
 
       //image that has a timer with a fill in question
      ["image", "Message", {html:'<img src = "http://www.sjsu.edu/linguistics/pics/lld_wordle_660px.jpg" /><br><p>Please wait</p>', transfer: 10000},//look at image for 10secs
-        "Form", {html: 'Write something about image here: <input type="text" name="aboutImg">'}]
+        "Form", {html: 'Write something about image here: <input type="text" name="aboutImg">'}],
+
+         //Multiple choice question with image options
+     ["image","PictureAccept", {s: "The sentence you want to show",
+                            //specify to press key "A" for image 1 in the as list, etc...
+                            as: [["A","http://s7.postimg.org/sxksy19y3/EDL_Logo1.jpg"],
+                                 ["B","http://s7.postimg.org/sxksy19y3/EDL_Logo1.jpg"],
+                                 ["C","http://s7.postimg.org/sxksy19y3/EDL_Logo1.jpg"],
+                                 ["D","http://s7.postimg.org/sxksy19y3/EDL_Logo1.jpg"]]}]
+
 
 ];
