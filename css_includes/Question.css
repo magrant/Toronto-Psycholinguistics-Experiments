@@ -9,7 +9,7 @@
     font-size: small;
 }
 li.normal-answer {
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     padding-bottom: 1em;
 }
@@ -30,7 +30,7 @@ li.scale-box {
     text-align: center;
 }
 .scale-comment-box {
-    float: left;
+    float: center;
     list-style: none;
     margin-left: 0em;
     padding-left: 0;
