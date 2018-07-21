@@ -7,10 +7,10 @@ This repository contains a collection of template experiments based on Ibex, a s
 * __video__
 
 We have organized our github repository into 5 branches, namely __master__ and four other individual branches, each with the above name. The __master__ branch is a compilation of all the various types of templates that we have developed. Most users would find it most useful to use the __master__ branch, but some might find it more desirable to use specific templates for specialized experimental tasks.
-##Introduction
-###Usage
+## Introduction
+### Usage
 There are two ways to develop and test experiments before deployment for actual participants to run the experiment. You can either have a setup on Ibex farm, and test experiments on the Ibex farm server, or you can download entire branches onto your computer and can further test and develop on your local server. More instructions on how to use both of these methods are further described below.
-###Experiment structure
+### Experiment structure
 Each experiment contains six folders and certain additional configuration files: __chunk_includes, css_includes, data_includes, js_includes, other_includes, www, example_lighttpd.conf, server_conf.py__ and the __README.md__ file. To quote the documentation, "The directories __js_includes__, __data_includes__ and __css_includes__ contains JavaScript and CSS files __required__ for particular kinds of experiment". The two configuration files are going to be of interest to advanced users for testing experiments on your local server, but not useful if you are developing experiments on Ibex farm. The main folders that experiment developers would be using would be __data_includes__ and __chunk_includes__ :
 + __data_includes__: By default, this folder contains one file, __example_data.js__, which is your main experiment file. For more information about the layout of this file, refer to the [Ibex documentation](https://code.google.com/p/webspr/wiki/Documentation03#Format_of_a_data_file). You can choose to have more than one experiment file in this folder, provided that only one file has the __.js__ extension, and this is the file that would be executed when running an experiment (either on Ibex farm or your server).
 + __chunk_includes__: This folder contains additional files that are embedded into your __example_data.js__ file. Most of the times, this would be additional html files, which are to be included as part of the [__Message__](https://code.google.com/p/webspr/wiki/Documentation03#Message) controller, for passing in html code, or audio files that would be required by __example_data.js__ to play sound in the experiment. Please refer to the Ibex documentation for detailed information about controller [options](https://code.google.com/p/webspr/wiki/Documentation03#Controllers) and the purpose of [html code in Ibex](https://code.google.com/p/webspr/wiki/Documentation03#HTML_Code) experiments.
@@ -24,7 +24,7 @@ After running your experiment once (for the first time), there are some addition
 + __results__: Contains experiment results, for detailed information on which __controllers__ register lines to the results file, refer to the [documentation](https://code.google.com/p/webspr/wiki/Documentation03#Controllers). For our purposes, since displaying images and audio/video make use of the __Message__ controller, we modified our __Message__ controller to print out one line to the results file, which records __'Apprehension time'__, which records how long a specific message(images, audio/video) was viewed for, which can be a vital piece of data to collect while running Linguistics experiments online. This folder only contains two files, __raw_results__ and __results__, which are cumbersome to deal with in terms of (extracting and)processing raw data. For this reason, we are currently working on coding scripts (in __python__ or __R__) which can be used to automate such data processing (such as for example, generating a spreadsheet) for further data analysis.  
 
 
-##Experiment setup on Ibex farm
+## Experiment setup on Ibex farm
 This setup is the easier of the two. In this case, create a new experiment in Ibex farm, and click `Update from git repo` and enter:
 + __repo url__: `https://github.com/magrant/Toronto-Psycholinguistics-Experiments`
 + __branch/revision__: whichever branch you desire
@@ -32,13 +32,13 @@ This setup is the easier of the two. In this case, create a new experiment in Ib
 Then simply, refresh the page and the experiment should load. 
 
 
-##<a name='ls'></a>Experiment setup on Local Server
-###Getting Started
+## Experiment setup on Local Server
+### Getting Started
 To download an experiment, clone the main (**master**) branch of this repository either by entering `git clone https://github.com/magrant/Toronto-Psycholinguistics-Experiments` in a ___terminal/console___ on a machine running __Unix__ like operating systems (including __Linux/OS X__), assuming you have [git](https://git-scm.com/) already installed on your system. If not so, you can download it [here](https://git-scm.com/downloads) for your specific OS. If you are using __Windows__, we suggest you download [Github for Windows](https://windows.github.com/) on your computer, and then use the `Clone in Desktop` button or just use the more recently added  __Drag and Drop__ feature, drag the folder to where you desire on your machine.
 
 To clone a specific branch, do ```git clone -b <branch-name> https://github.com/magrant/Toronto-Psycholinguistics-Experiments``` where `<branch-name>` can be one of __text__, __image__, __sound__ or __video__. Once again, on __Windows__, just switch branches on Github and then `Clone in Desktop`.
 
-###Running an experiment (requires python 2.x)
+### Running an experiment (requires python 2.x)
 To run an experiment in your browser (only really useful for testing purposes) on your local server, run the following in a terminal, from the subdirectory __www__:
 ```bash
 python server.py
@@ -47,7 +47,7 @@ python server.py
 Now navigate to your favorite browser, and go to url `http://localhost:3000`
 
 
-###Related Links
+### Related Links
 + [__Ibex farm__](http://spellout.net/ibexfarm/)
 + [__Ibex__](https://code.google.com/p/webspr/) (including links to documentation and the ibex github repository)
 + [__Amazon Mechanical Turk__](https://www.mturk.com/mturk/welcome) (MTurk)
